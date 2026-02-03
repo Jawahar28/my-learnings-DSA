@@ -146,6 +146,7 @@ b. We keep expanding children until we see a pattern.
     a. Time Complexity to access the ith element in an array is O(1).
     b. We can access the index array using "Memory Address(Reference)" in the array ,if it is Contingous Manner.
 
+    c. Dynamic Arrays:  Size is not fixed.
 
 
 
