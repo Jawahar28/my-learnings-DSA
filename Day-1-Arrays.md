@@ -1,10 +1,10 @@
 # Introduction to Problem Solving
 
-* Number vs Iterations vs Execution Time
+* Number vs Iterations vs Execution Time :
 
-10**8 -> 10**8 -> 1 sec
-10**9 -> 10**8 * 10 -> 10 sec
-10**18 -> 10**8 * 10**10 -> 317 years
+    10^8 - 10**8 - 1 sec
+    10^9 - 10**8 * 10 -> 10 sec
+    10^18 -> 10^8 * 10^10 -> 317 years
 
 As the execution time increases -> Efficiency of the code is decreased.
 
@@ -113,7 +113,41 @@ b. We keep expanding children until we see a pattern.
 
 8. Space Complexity : Space taken by the function depends upon how big is the input or extra space required by the function.
 
+        (OR)
+    Space Complexity is the max space(worst case) that is utilised at any point in time during running the algorithm.
+
 * It is also called as Auxillary Space.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+9. Importance of Constraints :
+
+    It is used to check whether the code is working properly or not for the given input range.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+10. Steps to approach a problem:
+
+    a. Read the Question and Constraints Carefully.
+    b. Formulate an Idea or Logic.
+    c. Verify the correctness of the Logic.
+    d. Mentally Develop a PseudoCode or rough idea of Loops.
+    e. Determine the Time Complexity based on the PseudoCode.
+    f. Assess if the TC is feasible and won't result in the TLE errors.
+    g. In Worst Case we can only have 10^7 or 10^8 iterations.
+    h. Re-evaluate the Idea/Logic if the time constarints are not otherwise proceed.
+    i. Code the idea if it is deemed feasible.
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+11. Some Important Points:
+
+    a. Time Complexity to access the ith element in an array is O(1).
+    b. We can access the index array using "Memory Address(Reference)" in the array ,if it is Contingous Manner.
+
+
+
 
                 
 
