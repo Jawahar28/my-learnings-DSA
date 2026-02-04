@@ -148,6 +148,18 @@ b. We keep expanding children until we see a pattern.
 
     c. Dynamic Arrays:  Size is not fixed.
 
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Problems to practice (Leetcode):
+
+# 1. https://leetcode.com/problems/count-primes/description/?envType=problem-list-v2&envId=array& ( Count Primes)
+# 2. https://leetcode.com/problems/two-sum/description/?envType=problem-list-v2&envId=array (Two Sum)
+# 3. https://leetcode.com/problems/remove-duplicates-from-sorted-array/?envType=problem-list-v2&envId=array (Remove Duplicates from Sorted Array)
+# 4. https://leetcode.com/problems/remove-element/description/?envType=problem-list-v2&envId=array (Remove Element)
+
+
+
+
 
 
                 
