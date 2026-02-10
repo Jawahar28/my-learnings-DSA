@@ -26,6 +26,26 @@
 
 * Whenever we use prefix sum , the SC would be O(N) in almost every cases.
 
+# Leetcode Questions:
+    1. Running Sum of 1d Array:
+        https://leetcode.com/problems/running-sum-of-1d-array/description/
+    
+    2. Find Pivot Index :
+        https://leetcode.com/problems/find-pivot-index/description/
+    
+    3. Find the Middle index in Array:
+        https://leetcode.com/problems/find-the-middle-index-in-array/description/
+    
+    4. Binary Sums:
+        https://leetcode.com/problems/binary-subarrays-with-sum/description/
+    
+    5. Number of subarrays with Odd Sum:
+        https://leetcode.com/problems/number-of-sub-arrays-with-odd-sum/description/
 
+    6. Subarray Sums Divisble by K:
+        https://leetcode.com/problems/subarray-sums-divisible-by-k/
+
+    7. Number of Submatrices That Sum to Target:
+        https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/description/
 
 
