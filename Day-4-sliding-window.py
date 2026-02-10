@@ -117,6 +117,6 @@ print(findsum([-4,1,3,2]))'''
         ans = max(ans, currsum)
         s+=1
         e+=1
-    return ans'''
+    return ans
 
-print(subarraysum([-3,4,-2,5,3,-2,8,2,-1,4],5))
+print(subarraysum([-3,4,-2,5,3,-2,8,2,-1,4],5))'''
