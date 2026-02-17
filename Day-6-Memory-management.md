@@ -97,4 +97,76 @@
 * 2. Heap : The data pointed by that reference variable is stored in Heap like Arrays, ArrayLists etc., are created inside a Heap.
             * Heap stored complex data.
 
-    
+
+* Eg : Shallow copy and Deep copy :
+
+        def main():
+            x = 10
+            arr = [0]*3 // Creating a list of size.
+            ar = arr // Assigning arr to ar
+            print(arr)
+            print(ar)
+
+        if __name__ == "__main__":
+            main()
+
+    * Explanation :
+        So here we will be having both memories :
+
+            In stack : 
+                        a. We will have block for main.
+
+                        b. Variable x is also stored.
+
+                        c. arr is also stored but with no values. with some reference address.
+
+                        d. ar is also stored but with no values and same reference as of arr.
+            
+            In Heap :
+                        a. We will have the address of arr with "#4k", with values a '0,0,0'
+
+                        b. Now for "ar" array, there will be no new space in the heap, since we are assigning the exisiting array to the new one. So the address of this array "ar" will have same reference/address as of array "arr". (This is called Shallow Copy)
+
+* Eg : Changing the reference : Call by value
+
+            def main():
+                arr = [0]*3 // Initally #4k
+                arr[1] = 5
+                arr[2] = 9
+
+                arr = [0]*5
+                print(arr) // prints #7k
+
+    * Explanation :
+                1. Initially we create a heap of #4k address
+                2. Now we assign some values to the arr indices.
+                3. Now we assign the exisiting arr to new size with new reference
+                4. The previous address will be lost.
+
+* Eg : Both heap and stack memory (Call By Reference)
+            def fun(a):
+                print(a)
+                a[1] = 5
+            
+            def main():
+                ar = [0]*3
+                print(ar)
+                ar[0] = 90
+                ar[1] = 50
+                fun(ar)
+                print(ar)
+            
+            if __name__ == "__main__":
+                main()
+
+    * Explanation :
+                1. Start with main function block in the call stack.
+                2. In main block , we have ar(#9k) in the heap.
+                3. Now, update the values given, which will get updated in the heap memory.
+                4. Now fun() call will appear in the call function.
+                5. fun() has a parameter, which will have same reference as of ar in the main functiom.
+                6. Now, update a[1] in the heap and after execution , in the call stack this block will get removed but in the heap it will remain same.
+
+                    * This is because there is another pointer referencing to the same address. If not, that heap memory will also get removed.
+                
+                
