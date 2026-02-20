@@ -26,8 +26,7 @@ print("Bitwise XOR of :",20 ^ 45)'''
 # Representing the Negative number.
 
 def negative(n):
-    s = format(n, '08b')
+    s = format(n & 0xffffffff, '032b')
     print(s)
-    return
 
-print(negative(5))
+negative(-5)

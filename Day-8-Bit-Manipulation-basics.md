@@ -39,3 +39,17 @@
                   The last bit is '1' then it is negative decimal number.
                   It checks with the range(No of bits).
 
+* 2's Complement : "s = format(n & 0xffffffff, '032b')"
+
+# RANGE OF DATA TYPES :
+
+* Number of Bits   -       Min Range      -       Max Range
+         2                     -2                     1
+         4                     -2^4                   2^3-1
+         8                     -2^8                   2^7-1
+         16                    -2^16                  2^15-1
+         32                    -2^32                  2^31-1
+
+* Range of bits = (-2^n-1) to (2^n-1)-1
+
+
