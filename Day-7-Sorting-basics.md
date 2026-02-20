@@ -19,7 +19,7 @@
                     arr[i], arr[min_idx] = arr[min_idx],arr[i]
                 
 * 2. Insertion Sort : Arrangement of Playing Cards.
-    * Code : #TC:O() ,SC:O(1)
+    * Code : #TC:O(N^2) ,SC:O(1)
              def insertion_sort(arr):
                 for i in range(1, len(arr)):
                     curr_ele = arr[i]
