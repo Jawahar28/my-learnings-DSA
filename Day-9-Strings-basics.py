@@ -63,4 +63,58 @@ print(palindrome('abmadamtam',2,6))
 print(palindrome('xjsnnf',1,4))'''
 
 
+# Q3 : Given a string s. Find the length of longest palindromic substring in s.
+
+# Brute Force :
+# TC : O(N^3), SC: O(1)
+'''def palindrome(s,si,ei):
+    while si <= ei:
+        if s[si] != s[ei]:
+            return False
+        si+=1
+        ei-=1
+    return True
+
+def longestpalindrome(s):
+    ans = 0
+    for i in range(len(s)):
+        for j in range(i,len(s)):
+            if palindrome(s,i,j):
+                ans = max(ans, (j-i+1))
+    return ans'''
+
+# Optimised Solution
+# TC: O(N^2), SC:O(1)
+def longestpalindrome(s):
+    ans = 0
+
+
+    for i in range(len(s)):
+        # Odd Length Palindrome
+        left, right = i,i
+
+        while left >= 0 and right < len(s):
+            if s[left] != s[right]:
+                break
+            ans = max(ans, (right-left+1))
+            left-=1
+            right+=1
+        
+        # Even Length Palindrome
+    
+        left, right = i,i+1
+
+        while left >= 0 and right < len(s):
+            if s[left] != s[right]:
+                break
+            ans = max(ans, (right-left+1))
+            left-=1
+            right+=1
+    
+    return ans    
+
+print(longestpalindrome('anmadamm'))
+print(longestpalindrome('feacabacabgf'))
+print(longestpalindrome('adaebcdfdcbetggte'))
+
 
