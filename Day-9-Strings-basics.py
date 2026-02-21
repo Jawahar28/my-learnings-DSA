@@ -47,3 +47,20 @@
 print(togglecase("Jello"))'''
 
 
+# Q2. Check Palindrome or not.
+# Given a string , start index and end index. Check for substring if its a palindrome or not.
+
+# TC : O(N), SC:O(1)
+'''def palindrome(s,si,ei):
+    while si <= ei:
+        if s[si] != s[ei]:
+            return "Not a palindromic Substring"
+        si+=1
+        ei-=1
+    return "Palindromic Substring"
+
+print(palindrome('abmadamtam',2,6))
+print(palindrome('xjsnnf',1,4))'''
+
+
+
