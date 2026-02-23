@@ -166,9 +166,50 @@ print(consecutive_ones([1,1,0,1,1,1,0,1]))'''
  
 print(majority_ele([3,4,3,3,6,1,3,2,5,3,3]))
 print(majority_ele([2,1,4]))
-print(majority_ele([5,5,5,5]))'''
+print(majority_ele([5,5,5,5]))
+
+
+# Practice Leetcode 229'''
 
 
 # Q3: Row Column to Zero
+# Given array [N][M], Make all elements in a row and column zero if any arr[i][j] == 0.
+# TC : O(N*M), SC:O(1)
+def rowcolzero(arr):
+    row_len = len(arr)
+    col_len = len(arr[0])
+
+    for row in range(row_len):
+        is_zero = False
+        for col in range(col_len):
+            if arr[row][col] == 0:
+                is_zero = True
+                break
+        if is_zero ==  True:
+            for col in range(col_len):
+                if arr[row][col] != 0:
+                    arr[row][col] = -1
+    
+    for col in range(col_len):
+        is_zero = False
+        for row in range(row_len):
+            if arr[row][col] == 0:
+                is_zero = True
+                break
+        if is_zero == True:
+            for row in range(row_len):
+                if arr[row][col] != 0:
+                    arr[row][col] = -1
+    
+
+    for row in range(row_len):
+        for col in range(col_len):
+            if arr[row][col] == -1:
+                arr[row][col] = 0
+    return arr
+
+
+print(rowcolzero([[1,2,3,4],[5,6,7,0],[9,2,0,4]]))
+
 
 
