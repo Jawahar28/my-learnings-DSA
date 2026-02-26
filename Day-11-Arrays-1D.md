@@ -11,8 +11,8 @@
     5. LC 363
 
 
-# Difference Array Problems:
-*   1. Corporate Flight Bookings
+# Difference Array Problems: Only works on Zero elements array.
+*   1. Corporate Flight Bookings (LC 1109)
 
-    2. Car Pooling
+    2. Car Pooling(LC 1094)
 
